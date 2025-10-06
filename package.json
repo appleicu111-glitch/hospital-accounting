@@ -1,19 +1,25 @@
 {
   "name": "hospital-accounting",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hospital accounting management system",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "heroku-postbuild": "npm rebuild sqlite3"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bcrypt": "^6.0.0",
-    "body-parser": "^2.2.0",
-    "express": "^5.1.0",
-    "express-session": "^1.18.2",
-    "sqlite3": "^5.1.7"
-  }
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "body-parser": "^1.20.2",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appleicu111-glitch/hospital-accounting.git"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
